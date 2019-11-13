@@ -1,0 +1,2 @@
+# edx-dev227x-oop-java-module-3
+EdX DEV227x Course - Object Oriented Programming in Java - Module 3 - Inheritance - Company Structure - Full Description At: https://courses.edx.org/courses/course-v1:Microsoft+DEV277x+3T2019/courseware/9c4e1dfcce774610938d51852584f4a1/b50bbd55c74747c883c8efd51757c8c9/1?activate_block_id=block-v1%3AMicrosoft%2BDEV277x%2B3T2019%2Btype%40vertical%2Bblock%4000dc29c26c21403cbdbc0ad8c5b0f640
