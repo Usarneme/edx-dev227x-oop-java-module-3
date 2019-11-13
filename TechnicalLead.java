@@ -4,6 +4,7 @@ public class TechnicalLead extends TechnicalEmployee {
     private int headCount;
     private int numDirectReports;
     private ArrayList<SoftwareEngineer> directReports;
+    private Accountant myAccountant;
 
     // TechnicalLead's base salary = 1.3 times that of a TechnicalEmployee.
     // TechnicalLead's should have a default head count of 4 and default direct reports of 0.
@@ -40,6 +41,10 @@ public class TechnicalLead extends TechnicalEmployee {
         }
     }
 
+    public setMyAccountant(Accountant acc) {
+        this.myAccountant = acc;
+    }
+
     public ArrayList<SoftwareEngineer> getDirectReports() {
         return this.directReports;
     }
@@ -47,7 +52,12 @@ public class TechnicalLead extends TechnicalEmployee {
     // check if the bonus amount requested would be approved by the BusinessLead supporting this TechnicalLead.
     // If it is, that employee should get that bonus and true should be returned. False should be returned otherwise
     public boolean requestBonus(Employee e, double bonus) {
-        return false; // TODO
+        if (this.myAccountant.approveBonus(bonus)) {
+            e.giveBonus(bonus);
+            return true;
+        } else {
+            return false;
+        }
     }
 
     // return a String that gives insight into this Manager and all their direct reports.

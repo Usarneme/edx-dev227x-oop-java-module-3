@@ -25,6 +25,8 @@ public class Accountant extends BusinessEmployee {
         for(SoftwareEngineer report : currentDirectReports) {
             this.setBonusBudget(this.getBonusBudget() + (report.getBaseSalary() * 1.1));
         }
+        // Designate this Accountant as the one assigned to the TechnicalLead
+        lead.setMyAccountant(this);
     }
 
     // take in a suggested bonus amount and check if there is still enough room in the budget.
