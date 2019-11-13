@@ -1,5 +1,5 @@
-# edx-dev227x-oop-java-module-3
-## EdX DEV227x Course - Object Oriented Programming in Java - Module 3 - Inheritance - Company Structure
+# edx-dev277x-oop-java-module-3
+## EdX DEV277x Course - Object Oriented Programming in Java - Module 3 - Inheritance - Company Structure
 
 ### Company Structure
 
